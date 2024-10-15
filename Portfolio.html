@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/d0748f26d3.js" crossorigin="anonymous"></script>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #080808;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 7%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+
+}  
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 6%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 49px;
+    margin-top: 3%;
+}
+span{
+    color: #ff004f;
+}
+.transparent-box {
+    background-color: #111418; 
+    border: 1px solid #000; 
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 40%; 
+    margin: left; 
+}
+h4 {
+    color: #fff; 
+}
+
+p {
+    color: #fff; 
+}
+
+/*------------about me--------->*/
+
+#about{
+    padding: 40px 0;
+    color: #6E8894;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;     
+}
+
+h1{
+    font-size: 72px;
+}
+
+.transparent-box2 {
+    width: 1200px;
+            height: 399px;
+            background-color: #111418;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+}
+
+.transparent-box2:hover {
+    width: 1300px;
+    height: 400px;
+}
+
+.transparent-box2 p{
+    margin: 0; 
+    font-size: 22px;
+    transition: font-size 0.3s ease;
+}
+
+.transparent-box2:hover p {
+    font-size: 24px; 
+}
+span{
+    color: #ff004f;
+}
+
+/*------------3 boxes--------->*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .custom-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .custom-box {
+    width: 45%; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 30px; 
+    border-radius: 10px;
+    margin: 20px; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .custom-box:hover {
+    transform: scale(1.05); 
+  }
+  
+  h2 {
+    border-bottom: 2px solid #ff004f; 
+    padding-bottom: 15px; 
+    margin-bottom: 20px; 
+    font-size: 3em; 
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px; 
+    font-size: 1.3em; 
+  }
+  
+
+  li::before {
+    content: '\2022'; 
+    color: #4CAF50; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+/*--------contact--------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px ;
+    font-size: 26px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn {
+    background-color: #ff004f; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+  }
+  
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 6px;
+
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(236, 81, 81, 0.36),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Web Devloper</p>
+            <h1>I, <span>Abdul Zaheer</span> <br> A student at Woxsen University</h1>
+            <br>
+            <br>
+            <div class="background">
+                <div class="transbox">
+                </head>
+                <body>
+                    <div class="transparent-box">
+                        <h3>Welcome to my world!!</h3>
+                        <br>
+                        <p>
+                            Hey there! I'm Abdul Zaheer, a passionate and driven student currently pursuing a B.Tech in Computer Science at Woxsen University. Born and raised in the vibrant city of Hyderabad, Telangana, India, my journey has been shaped by a blend of diverse experiences and educational milestones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------about me ---------------->
+
+<div id="about">
+    <div class="container">
+        <div class="about-col-1">
+            <img src="" alt="">
+            <div class="about-col-2">
+               <center> <h1 class=" sub-title "><span>About Me</span></h1></center>
+                <br>
+                <center><div class="transparent-box2">
+                    <p>Hey there! I'm Abdul Zaheer, a passionate and driven student currently pursuing a B.Tech in Computer Science at Woxsen University. Born and raised in the vibrant city of Hyderabad, Telangana, India, my journey has been shaped by a blend of diverse experiences and educational milestones.
+                        I kick-started my academic journey at St. Andrews School in Bowenpally, where I navigated through the exciting realms of lower kindergarten to the 10th standard. The foundation laid there not only equipped me with knowledge but also instilled values that have become an integral part of my character. 
+                        For my higher secondary education, I found a nurturing academic environment at Reqelford International School for both 11th and 12th grades. These crucial years not only honed my academic prowess but also fueled my curiosity for the world of computer science.
+                        Fast forward to the present, and I find myself deeply engrossed in the dynamic and ever-evolving field of computer science at Woxsen University. This B.Tech journey is not just about coding and algorithms; it's about embracing challenges, fostering creativity, and sculpting a future where technology is a force for positive change.
+                    </p>
+                </div></center>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+    <div class="custom-container">
+        <section class="custom-box" id="education-box">
+          <h2>Education</h2>
+          <ul>
+            <li>B.Tech[General Computer Science Engineering] from Woxsen University[2022-26]</li>
+            <li>Intermediate[MPC] Reqelford International School[2020-22]</li>
+            <li>Pursued CBSE from St. Andrews High School</li>
+          </ul>
+        </section>
+        <section class="custom-box" id="experience-box">
+          <h2>Work Experience</h2>
+          <ul>
+            <li>Web Developer</li>
+          </ul>
+        </section>
+        <section class="custom-box" id="skills-box">
+          <h2>Skills</h2>
+          <ul>
+            <li>Programming Languages: JavaScript, Python, Java</li>
+            <li>Web Technologies: HTML, CSS,</li>
+            <li>Database: MongoDB, MySQL</li>
+            <li>Version Control: Git</li>
+            <li>Tools: VS Code </li>
+          </ul>
+        </section>
+      </div>
+
+      <!--------------contact me ---------------->
+<div id="contract">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-regular fa-paper-plane"></i> Abdul.Zaheer_2026@woxsen.edu.in</p>
+                <p> <i class="fa-solid fa-phone"></i> +91-9849582487</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Enter E-Mail" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

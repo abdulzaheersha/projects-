@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+  <title>Signup Page</title>
+</head>
+
+<body>
+
+  <div class="login-card-container">
+    <div class="login-card">
+      <div class="login-card-logo">
+        </div>
+      <div class="login-card-header">
+        <h1>Sign Up</h1>
+        <div>Create a new account</div>
+      </div>
+      <form class="login-card-form">
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">person</span>
+          <input type="text" placeholder="Enter Username" id="usernameForm" autofocus required>
+        </div>
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">mail</span>
+          <input type="text" placeholder="Enter Email" id="emailForm" required>
+        </div>
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">lock</span>
+          <input type="password" placeholder="Enter Password" id="passwordForm" required>
+        </div>
+        <div class="form-item">
+          <span class="form-item-icon material-symbols-rounded">lock</span>
+          <input type="password" placeholder="Confirm Password" id="confirmPasswordForm" required>
+        </div>
+        <div class="form-item-other">
+          <div class="checkbox">
+            <input type="checkbox" id="termsCheckbox" required>
+            <label for="termsCheckbox">I agree to the terms and conditions</label>
+          </div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="login-card-footer">
+        Already have an account? <a href="#">Sign In</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function validateForm() {
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var phonePattern = /^\d{10}$/;
+        var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z0-9@$!%*?&]{6,}$/;
+
+        var emailError = document.getElementById("emailError");
+        var phoneError = document.getElementById("phoneError");
+        var passwordError = document.getElementById("passwordError");
+
+        // Reset error messages
+        emailError.textContent = "";
+        phoneError.textContent = "";
+        passwordError.textContent = "";
+
+        if (!email || !phone || !password || !confirmPassword) {
+            alert("All fields are required. Please fill in all the fields.");
+            return;
+        }
+
+        if (!emailPattern.test(email)) {
+            emailError.textContent = "Please enter a valid email address.";
+            return;
+        }
+
+        if (!phonePattern.test(phone)) {
+            phoneError.textContent = "Please enter a valid mobile number.";
+            return;
+        }
+
+        if (!passwordPattern.test(password)) {
+            passwordError.textContent = "Password must contain at least one uppercase letter, one lowercase letter, and one special character, and be at least 6 characters long.";
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            passwordError.textContent = "Passwords do not match!";
+            return;
+        }
+
+        // If all validations pass, allow form submission
+        alert("Signup successful! Now Login to your account. Redirecting to Login.");
+        window.location.href = "login.html";
+    }
+
+    function validateEmail() {
+        var email = document.getElementById("email").value;
+        var emailError = document.getElementById("emailError");
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+            emailError.textContent = "Please enter a valid email address.";
+        } else {
+            emailError.textContent = "";
+        }
+    }
+
+    function validatePhoneNumber() {
+        var phone = document.getElementById("phone").value;
+        var phoneError = document.getElementById("phoneError");
+        var phonePattern = /^\d{10}$/;
+
+        if (!phonePattern.test(phone)) {
+            phoneError.textContent = "Please enter a valid mobile number.";
+        } else {
+            phoneError.textContent = "";
+        }
+    }
+</script>
+
+
+</body>
+
+</html>
